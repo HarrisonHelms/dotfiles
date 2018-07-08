@@ -1,0 +1,35 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Red",
+    "extensions.ignoreRecommendations": false,
+    "editor.renderLineHighlight": "none",
+    "files.autoSave": "afterDelay",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "window.zoomLevel": 2,
+    "[javascript]": {"editor.tabSize": 2},
+    "editor.detectIndentation": false,
+    "editor.quickSuggestions": false,
+    "editor.quickSuggestionsDelay": 90,
+    "editor.autoClosingBrackets": false,
+    "editor.formatOnType": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.parameterHints": false,   
+    "editor.wordBasedSuggestions": false,
+    "cSpell.userWords": [
+        "cache",
+        "const",
+        "freebsd",
+        "nien",1
+        "nopart",
+        "nostart",
+        "nyet",
+        "respawn",
+        "skil",
+        "skilstak",
+        "stak",
+        "storyeng",
+        "uhun",
+        "yeppers"
+    ]
+}1
