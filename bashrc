@@ -27,6 +27,8 @@ export CLASSPATH="$HOME/repos/usr-share-skilstak/lib/java:$HOME/repos/usr-share-
 export NODE_PATH=/usr/share/skilstak/lib/node_modules:/Users/robmuh/repos/usr-share-skilstak/lib/node_modules
 export PYTHONPATH=$HOME/repos/ghc/lib:$PYTHONPATH
 
+export PATH=$HOME/repos/skilstakio/.vuepress/bin:$PATH
+
 export PGDATABASE=sk
 export PGSSLMODE=disable
 set -o vi
