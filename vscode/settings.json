@@ -1,7 +1,11 @@
 {
     "workbench.colorTheme": "Dark Chrome DevTools",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 3,
     "workbench.startupEditor": "newUntitledFile",
     "files.autoSave": "onFocusChange",
     "editor.fontSize": 14,
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "workbench.iconTheme": "material-icon-theme",
 }
