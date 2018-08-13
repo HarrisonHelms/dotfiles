@@ -5,8 +5,6 @@ alias now="kn now"
 alias make="mmake"
 alias gall="grepall"
 alias log="vi $SKILSTAK_LOG"
-alias private="repo private"
-alias blog="repo robs.io; cd public"
 alias data="repo data"
 alias concepts="note concepts"
 alias mvpic="mv ~/Desktop/*.{gif,png,jpg} ./"
@@ -32,3 +30,7 @@ export PATH=$HOME/repos/skilstakio/.vuepress/bin:$PATH
 export PGDATABASE=sk
 export PGSSLMODE=disable
 set -o vi
+
+alias promptmed='export PS1="\[${c_blue}\]\u\[$c_base1\]@\h\[$c_base2\]:\[$c_magenta\]\W\[$c_base2\]\\$ \[$c_reset\]"'
+
+promptmed
