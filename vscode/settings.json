@@ -10,5 +10,14 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "left",
     "editor.minimap.enabled": false,
-    "go.buildOnSave": "package"
+    "go.buildOnSave": "workspace",
+    "explorer.confirmDelete": false,
+    "saveAndRun": {
+        "commands":[
+          {
+              "cmd": "make",
+              "silent": true
+          }  
+        ],
+    }
 }
