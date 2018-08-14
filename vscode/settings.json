@@ -2,10 +2,13 @@
     "workbench.colorTheme": "Dark Chrome DevTools",
     "window.zoomLevel": 3,
     "workbench.startupEditor": "newUntitledFile",
-    "files.autoSave": "onFocusChange",
+    "files.autoSave": "afterDelay",
     "editor.fontSize": 14,
     "git.enableSmartCommit": true,
     "git.autofetch": true,
     "git.confirmSync": false,
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "left",
+    "editor.minimap.enabled": false,
+    "go.buildOnSave": "package"
 }
