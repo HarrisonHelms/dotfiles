@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Dark Chrome DevTools",
     "window.zoomLevel": 3,
     "workbench.startupEditor": "newUntitledFile",
     "files.autoSave": "afterDelay",
@@ -10,6 +9,7 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "left",
     "editor.minimap.enabled": false,
+    "editor.autoClosingBrackets": false,
     "go.buildOnSave": "workspace",
     "explorer.confirmDelete": false,
     "saveAndRun": {
@@ -19,5 +19,6 @@
               "silent": true
           }  
         ],
-    }
+    },
+    "workbench.colorTheme": "Red"
 }
