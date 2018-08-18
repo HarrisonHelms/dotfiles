@@ -3,6 +3,11 @@
     "workbench.startupEditor": "newUntitledFile",
     "files.autoSave": "afterDelay",
     "editor.fontSize": 14,
+    "[markdown]": {
+            "editor.rulers": [
+            76,200
+        ],
+    },
     "git.enableSmartCommit": true,
     "git.autofetch": true,
     "git.confirmSync": false,
