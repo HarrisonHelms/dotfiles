@@ -34,3 +34,18 @@ set -o vi
 alias promptmed='export PS1="\[${c_blue}\]\u\[$c_base1\]@\h\[$c_base2\]:\[$c_magenta\]\W\[$c_base2\]\\$ \[$c_reset\]"'
 
 promptmed
+
+function mksoil() {
+  name=$1
+  if [ -z "$name" ]; then
+    echo "Missing a name"
+  fi
+  cd $HOME/repos
+  mkdir $name
+  cd $name
+  touch README.md
+  echo updated = `isotime` >> soil.toml
+  git init
+  hub create -p skilstak/$name
+  code .
+}
