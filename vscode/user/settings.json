@@ -8,6 +8,7 @@
             76,200
         ],
     },
+    "window.newWindowDimensions": "inherit",
     "git.enableSmartCommit": true,
     "git.autofetch": true,
     "git.confirmSync": false,

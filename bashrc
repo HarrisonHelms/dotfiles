@@ -38,7 +38,7 @@ promptmed
 function mksoil() {
   name=$*
   slugname=`slug $name`
-  cd $HOME/repos/soil
+  cd $HOME/repos/skilstak-soil
   mkdir $slugname
   cd $slugname
   echo "$name" > README.md
