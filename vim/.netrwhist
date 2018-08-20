@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/robmuh/go/src/github.com/skilstak/go-sandbox/hello'
+let g:netrw_dirhist_2='/Users/robmuh/go/src/github.com/robmuh/go-textbot'
+let g:netrw_dirhist_3='/Users/robmuh/go/src/github.com/robmuh/go-textbot/responder'
+let g:netrw_dirhist_4='/Users/robmuh/repos/personal/vscode'

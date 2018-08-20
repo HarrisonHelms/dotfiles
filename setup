@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# so we can use `$CONFIG`, `pubkey` and such
+. ./bashrc
+
+tstamp=`bin/tstamp`
+
+_links() {
+  links="
+  bash_completion
+  bash_profile
+  bashrc
+  bs-config.js
+  vim
+  dircolors
+  "
+
+  for i in $links; do 
+    target=$HOME/.$i
+    if [ -e $target ]; then
+      mv $target ${target}.$tstamp
+    fi
+    ln -fs $CONFIG/$i $target 
+  done
+
+  # vim 7.3 (raspi) does not have a 2nd user rc
+  if [ -e "$HOME/.vimrc" ]; then
+    mv "$HOME/.vimrc" "$HOME/.vimrc.$tstamp"
+  fi
+  ln -fs $CONFIG/vim/vimrc "$HOME/.vimrc"
+}
+
+_tmux() {
+  target="$HOME/.tmux.conf"
+  if [ -e $target ]; then
+    echo "Detected existing $target Skipping."
+    return
+  fi
+  ln -fs $CONFIG/tmux/config $target
+}
+
+
+#####################################################
+_links
+_tmux
