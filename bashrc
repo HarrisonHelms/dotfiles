@@ -36,17 +36,16 @@ alias promptmed='export PS1="\[${c_blue}\]\u\[$c_base1\]@\h\[$c_base2\]:\[$c_mag
 promptmed
 
 function mksoil() {
-  name=$1
-  if [ -z "$name" ]; then
-    echo "Missing a name"
-  fi
-  cd $HOME/repos
-  mkdir $name
-  cd $name
-  touch README.md
+  name=$*
+  slugname=`slug $name`
+  cd $HOME/repos/soil
+  mkdir $slugname
+  cd $slugname
+  echo "$name" > README.md
+  perl -e "print '-' x ${#name}" >> README.md
   echo updated = `isotime` >> soil.toml
   git init
-  hub create -p skilstak/$name
+  hub create -p skilstak/$slugname
   code .
 }
 
@@ -54,3 +53,20 @@ function grepall() {
   find . -name "*.git*" -prune -o -exec grep -i --color "$1" {} /dev/null 2>/dev/null \;
 }
 
+function save() {
+  comment=save
+  [ ! -z "$*" ] && comment="$*"
+
+  git pull
+  git add -A .
+  git commit -a -m "$comment"
+  git push
+}
+
+function vic() {
+  $EDITOR `which $1`
+}
+
+function codec() {
+  code `which $1`
+}
