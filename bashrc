@@ -49,3 +49,8 @@ function mksoil() {
   hub create -p skilstak/$name
   code .
 }
+
+function grepall() {
+  find . -name "*.git*" -prune -o -exec grep -i --color "$1" {} /dev/null 2>/dev/null \;
+}
+
