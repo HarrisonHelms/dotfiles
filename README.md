@@ -5,8 +5,8 @@ Pilfer to your heart's content, at your own risk.
 
 Note that this stuff has been highly customized for me personally, including
 hardcoding some of my usernames. Unless you are me, you should really not run
-`setup.sh` (if you do you are simply a moron and I pity you). Instead, create
-your own (no, don't just fork this one).
+`setup.sh`. (If you do you are objectively a moron and I pity you). Instead,
+create your own. (No, don't just fork this one).
 
 Bash, Node, Go
 --------------
