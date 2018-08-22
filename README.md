@@ -4,9 +4,9 @@ Bashy Config for Mac, Linux, Windows
 Pilfer to your heart's content, at your own risk. 
 
 Note that this stuff has been highly customized for me personally, including
-hardcoding some of my usernames. Unless you are me, you should really not run
-`setup.sh`. (If you do you are objectively a moron and I pity you). Instead,
-create your own. (No, don't just fork this one).
+hardcoding some of my usernames. In other words, unless you are me, do not
+run `setup.sh` and if you do, well, you are objectively a moron who does
+not read READMEs and deserves what you get.
 
 Bash, Node, Go
 --------------
