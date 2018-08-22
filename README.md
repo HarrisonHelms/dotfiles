@@ -39,8 +39,12 @@ I don't care if some uninformed morons will write things like "have a
 healthy disdain for Perl" in their job descriptions. This just shows how
 absolutely stupid they are. If they had half a f***ing brain they would
 realize the `perl` executable is on every Linux/UNIX computer built for the
-last 20 years! This is why `perl` the number one pick by hackers
-today (even though they don't blast it from the housetops).
+last 20 years! Among other things, this is why `perl` is the number one pick
+by professional hackers today (even though they don't blast it from the
+housetops, and no it isn't Python or Ruby, like on Mr. Robot, even though
+Metasploit decided to use Ruby instead of Perl, having started with Perl,
+but being caught up in the Ruby craze that never materialized into the
+ubiquity Perl still enjoys).
 
 Perl is the most powerful language interpreter found on *any*
 Linux/UNIX system ***by default***. Python will ***NEVER*** be able to claim
