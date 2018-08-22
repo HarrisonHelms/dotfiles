@@ -8,8 +8,8 @@ hardcoding some of my usernames. In other words, unless you are me, do not
 run `setup.sh` and if you do, well, you are objectively a moron who does
 not read READMEs and deserves what you get.
 
-Bash, Node, Go
---------------
+Bash, Node, Go, and (sometimes) Perl
+------------------------------------
 
 These are the [only languages] anyone really needs.
 
