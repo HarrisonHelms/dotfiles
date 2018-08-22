@@ -57,7 +57,7 @@ usually have no idea what `sed` and `awk` even are and why Larry created
 `perl` primarily to replace them. Meanwhile, they champion a brain-dead
 language that did not see how short-sighted making white-space significant
 really was (tanking any expansion of the language to include multi-line
-`lambdas` for example.
+`lambdas` for example.)
 
 Go ahead, have a look at my dotfile and functions and tell me you could
 replace the `perl` with `python` or `sed` or `awk` as elegantly. You just
