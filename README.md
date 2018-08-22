@@ -30,11 +30,10 @@ this new dotfiles repo.
 Long Live Perl!
 ---------------
 
-There is a reason `perlre.so` is included in every other freaking language
-on the planet. Perl *defined* the standard for regular expressions and
-still does. What's a regular expression? 
-
-Um, might be time for you to run along and play with your toys now.
+There is a reason `perlre.so` is included in every other freaking language on
+the planet. Perl *defined* the standard for regular expressions and still
+does. What's a regular expression? Um, might be time for you to run along and
+play with your toys now.
 
 I don't care if some uninformed morons will write things like "have a
 healthy disdain for Perl" in their job descriptions. This just shows how
