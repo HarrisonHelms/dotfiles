@@ -24,8 +24,7 @@ Python reminds me of my ex-wife. We had good times, but mostly I'm still
 angry about all the time and money I invested on her. Read my rants on
 [robs.io](https://robs.io).
 
-I have banished Python from my personal workflows and dependencies. Hence,
-this new dotfiles repo.
+I have banished Python from my personal workflows and dependencies. Hence, this new dotfiles repo.
 
 Long Live Perl!
 ---------------
