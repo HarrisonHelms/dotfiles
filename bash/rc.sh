@@ -86,7 +86,9 @@ alias lr='ll -R'           #  Recursive ls.
 alias la='ll -A'           #  Show hidden files.
 alias list='ls -1 --color=none'
 alias ip="ifconfig | perl -ne '/^\s*inet (?:addr)?/ and print'"
+alias ipinfo="curl ipinfo.io"
 alias repos='cd "$HOME/repos"'
+alias weather="curl wttr.in"
 
 if [ `which browser-sync` ]; then
   alias bs="browser-sync start -c $HOME/.bs-config.js"
