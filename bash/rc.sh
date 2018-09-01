@@ -90,6 +90,11 @@ alias ipinfo="curl ipinfo.io"
 alias repos='cd "$HOME/repos"'
 alias weather="curl wttr.in"
 
+function howin() {
+  where="$1"; shift
+  IFS=+ curl "http://cht.sh/$where/ $*"
+}
+
 if [ `which browser-sync` ]; then
   alias bs="browser-sync start -c $HOME/.bs-config.js"
 fi
