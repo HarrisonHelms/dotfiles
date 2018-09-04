@@ -89,8 +89,17 @@ alias ip="ifconfig | perl -ne '/^\s*inet (?:addr)?/ and print'"
 alias ipinfo="curl ipinfo.io"
 alias repos='cd "$HOME/repos"'
 alias weather="curl wttr.in"
+alias lastondesk="ls -1 -dtr ~/Desktop/* | tail -1"
 
-function howin() {
+mvlast () {
+  if [ -d ./assets ]; then
+    mv "`lastondesk`" ./assets/$1
+  else
+    mv "`lastondesk`" ./$1
+  fi
+}
+
+howin() {
   where="$1"; shift
   IFS=+ curl "http://cht.sh/$where/ $*"
 }
@@ -125,7 +134,7 @@ else
   export EDITOR=vi
 fi
 
-function mksoil {
+mksoil () {
   local name=$*
   local slugname=`slug $name`
   cd $HOME/repos/skilstak-soil
@@ -139,11 +148,11 @@ function mksoil {
   code .
 }
 
-function grepall {
+grepall () {
   find . -name "*.git*" -prune -o -exec grep -i --color "$1" {} /dev/null 2>/dev/null \;
 }
 
-function save {
+save () {
   local comment=save
   [ ! -z "$*" ] && comment="$*"
 
@@ -153,19 +162,19 @@ function save {
   git push
 }
 
-function vic {
+vic () {
   $EDITOR `which $1`
 }
 
-function codec {
+codec () {
   code `which $1`
 }
 
-function gocd  {
+gocd () {
   cd `go list -f '{{.Dir}}' ...$1`
 }
 
-function pushsshkey {
+pushsshkey () {
   local id=$1
   local host=$2
   cat ~/.ssh/${id}_rsa.pub | ssh $host '( [ ! -d "$HOME/.ssh" ] && mkdir "$HOME/.ssh"; cat >> "$HOME/.ssh/authorized_keys2" )'
