@@ -34,12 +34,9 @@ ln -fs $here/tmux/config $HOME/.tmux.conf
 if [ $PLATFORM = mac ]; then
     if [ -z "`which code`" ]; then
         echo "Looks like you still need to install vscode."
+        echo "Don't forget your cloudSetting gist."
         exit 1
     fi
-    ln -fs $here/vscode/user "$HOME/Library/Application Support/Code/User"
-    rm -rf $HOME/.vscode
-    mkdir $HOME/.vscode
-    ln -fs $here/vscode/extensions $HOME/.vscode/extensions
     if [ -z "`which brew`" ]; then
         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     fi
