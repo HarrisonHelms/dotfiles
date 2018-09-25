@@ -90,6 +90,7 @@ alias ipinfo="curl ipinfo.io"
 alias repos='cd "$HOME/repos"'
 alias weather="curl wttr.in"
 alias lastondesk="ls -1 -dtr ~/Desktop/* | tail -1"
+alias dev="yarn docs:dev"
 
 mvlast () {
   if [ -d ./assets ]; then
