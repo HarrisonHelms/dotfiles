@@ -91,6 +91,7 @@ alias repos='cd "$HOME/repos"'
 alias weather="curl wttr.in"
 alias lastondesk="ls -1 -dtr ~/Desktop/* | tail -1"
 alias dev="yarn docs:dev"
+alias slog="touch `tstamp`.md && code ."
 
 mvlast () {
   if [ -d ./assets ]; then

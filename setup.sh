@@ -16,9 +16,6 @@ ln -fs $here/bash/completion.sh $HOME/.bash_completion
 rm -f $HOME/.bash_profile
 ln -fs $here/bash/profile.sh $HOME/.bash_profile
 
-rm -f $HOME/.bs-config.js
-ln -fs $here/bs/config.js $HOME/.bs-config.js
-
 rm -rf $HOME/vim
 ln -fs $here/vim $HOME/.vim
 
